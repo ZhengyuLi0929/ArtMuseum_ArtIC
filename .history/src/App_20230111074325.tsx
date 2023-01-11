@@ -17,15 +17,9 @@ function App() {
     <Router>
     <div className="App">
       <header className="App-header">
-        <div style={{
-            display: 'flex',
-            flexWrap: 'nowrap',
-            justifyContent: 'space-between'
-        }}>
-          <Link to ="/" style={{ color: 'grey', marginRight: "80px", fontFamily: 'Georigia'}}> Home Page </Link>
-          <Link to ="/gallery" style={{ color: 'grey', marginRight: "80px", fontFamily: 'Georigia' }}> Gallery Panel </Link>
-          <Link to ="/list" style={{ color: 'grey', fontFamily: 'Georigia' }}> Search Panel </Link>
-        </div>
+        <Link to ="/" style={{ color: 'blue', textDecoration: 'underline' }}> home </Link>
+        <Link to ="/gallery" style={{ color: 'blue', textDecoration: 'underline' }}> Gallery Panel </Link>
+        <Link to ="/list" style={{ color: 'blue', textDecoration: 'underline' }}> Search Panel </Link>
           <Routes>
             <Route path = "/" element = {<HomeView></HomeView>}/>
             <Route path = "/gallery" element = {<GalleryView></GalleryView>}/>

@@ -22,9 +22,9 @@ function App() {
             flexWrap: 'nowrap',
             justifyContent: 'space-between'
         }}>
-          <Link to ="/" style={{ color: 'grey', marginRight: "80px", fontFamily: 'Georigia'}}> Home Page </Link>
-          <Link to ="/gallery" style={{ color: 'grey', marginRight: "80px", fontFamily: 'Georigia' }}> Gallery Panel </Link>
-          <Link to ="/list" style={{ color: 'grey', fontFamily: 'Georigia' }}> Search Panel </Link>
+          <Link to ="/" style={{ color: 'blue', textDecoration: 'underline', marginRight: "20px"}}> home </Link>
+          <Link to ="/gallery" style={{ color: 'blue', textDecoration: 'underline', marginRight: "20px" }}> Gallery Panel </Link>
+          <Link to ="/list" style={{ color: 'blue', textDecoration: 'underline' }}> Search Panel </Link>
         </div>
           <Routes>
             <Route path = "/" element = {<HomeView></HomeView>}/>
